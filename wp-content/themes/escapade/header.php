@@ -34,7 +34,7 @@
 
 	<?php do_action( 'primer_before_header' ); ?>
 
-	<header id="masthead" class="site-header" role="banner"<?php if ( primer_has_hero_image() ) : ?> style="background:url('<?php echo esc_url( primer_get_hero_image() ); ?>') no-repeat top center; background-size: contain;"<?php endif; ?>>
+	<header id="masthead" class="site-header" role="banner"<?php if ( primer_has_hero_image() ) : ?> style="background:url('<?php echo esc_url( primer_get_hero_image() ); ?>') no-repeat top center; background-size: contain;background-position: center;"<?php endif; ?>>
 
 		<?php do_action( 'primer_pre_hero' ); ?>
 

@@ -911,7 +911,8 @@ apse.navigation > .site-info,
   .pull-11 {
     position: relative;
     right: 91.66667%;
-    left: auto; } }
+    left: auto; }
+}
 
 @media only screen and (min-width: 64.063em) {
   .large-push-0 {
@@ -2886,7 +2887,7 @@ a {
 
 @media only screen and (min-width: 55.063em) {
   .main-navigation-container {
-    margin: 35px -35px 0; } }
+     } }
 
 @media only screen and (max-width: 55em) {
   #site-navigation {
@@ -3055,7 +3056,7 @@ a {
   cursor: pointer;
   display: none;
   position: absolute;
-  top: 4px;
+  top: 15px;
   right: 0;
   display: block;
   z-index: 99999; }
@@ -3094,15 +3095,24 @@ a {
   z-index: 9999;
   background-color: #191919;
   background-color: rgba(25, 25, 25, 0.95); }
+  @media only screen and (min-width: 55.063em) {
+    .side-masthead {
+      position: fixed;
+      padding: 0 35px;
+    }
+  }
+  @media only screen and (max-width: 55.063em) {
+    .side-masthead {
+      position: fixed;
+      top: 0;
+      /* padding: 0 35px; */
+    }
+  }
   .side-masthead:before, .side-masthead:after {
     content: " ";
     display: table; }
   .side-masthead:after {
     clear: both; }
-  @media only screen and (min-width: 55.063em) {
-    .side-masthead {
-      position: fixed;
-      padding: 0 35px; } }
   .side-masthead .mobile-container {
     display: none; }
   .side-masthead.toggled .mobile-container {
@@ -3112,7 +3122,9 @@ a {
     display: none; }
   @media only screen and (max-width: 55em) {
     .side-masthead .site-title-wrapper {
-      width: 80%; } }
+      width: 85px;
+      /* display: none; */
+    } }
   @media only screen and (min-width: 55.063em) {
     .side-masthead {
       display: block;
@@ -3546,6 +3558,10 @@ html {
 
 #page .site-main article.type-post h2.page-title a {
   border: none; }
+
+#page {
+  overflow-x: hidden;
+}
 
 .archive-title {
   margin-bottom: 1em;
@@ -4095,7 +4111,7 @@ body.layout-one-column-narrow #content {
   .hero .widget-title {
     margin: 0 0 .25em;
     padding: 0;
-    font-size: 300%;
+    font-size: 36px;
     font-weight: 300;
     line-height: 1.2; }
   .hero .textwidget {
@@ -4674,3 +4690,8 @@ body.woocommerce-cart .primer-wc-cart-sub-menu {
 
 .wp-block-audio audio {
   width: 100%; }
+  @media only screen and (max-width: 55em) {
+    body {
+      padding-top: 81px;
+    }
+  }
